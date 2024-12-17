@@ -61,9 +61,3 @@ Deleted branch test (was 608ce99).
 ```
 
 ## Exercise2
-
-
-
-
-
-
