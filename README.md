@@ -72,7 +72,7 @@ Saved working directory and index state WIP on main: 1277fe5 changes
 ```
 
 ```bash
-mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git add home.html
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git add about.html
 ```
 
 ```bash
