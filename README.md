@@ -137,8 +137,8 @@ mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git reset --hard
 HEAD is now at d84820e Exercise2
 ```
 
-#Bundle2
-#Exercise1
+# Bundle2
+## Exercise1
 
 ```bash
 mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git branch ft/bundle-2
