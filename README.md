@@ -558,3 +558,87 @@ To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
    5b58220..97b693d  ft/faq-page -> ft/faq-page
 
 ```
+
+# Bundle3
+## Exercise2
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout ft/faq-page 
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git add home.html 
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git commit -m "made changes in home.html"
+[main 4fd586f] made changes in home.html
+ 1 file changed, 1 insertion(+)
+
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 362 bytes | 362.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
+   7772d07..4fd586f  main -> main
+
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout ft/home-page-redesign 
+Switched to branch 'ft/home-page-redesign'
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git add home.html 
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git commit -m "added more content to home.html"
+[ft/home-page-redesign 25c85bd] added more content to home.html
+ 1 file changed, 3 insertions(+)
+
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 431 bytes | 431.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Mugara250/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote: 
+To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+```
