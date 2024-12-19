@@ -215,6 +215,152 @@ To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 ```
 
+# Bundle2
+## Exercise2
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 978 bytes | 978.00 KiB/s, done.
+From https://github.com/Mugara250/Gym-Git-Exercise-Solutions
+   b3acab2..fd0dd35  main       -> origin/main
+Updating b3acab2..fd0dd35
+Fast-forward
+ services.html | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+ create mode 100644 services.html
+
+````
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git add services.html 
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git commit -m "changes on services.html"
+[ft/service-redesign b02b751] changes on services.html
+ 1 file changed, 2 insertions(+)
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 340 bytes | 340.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/Mugara250/Gym-Git-Exercise-Solutions/pull/new/ft/service-redesign
+remote: 
+To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git add services.html 
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git commit -m "made changes on services.html"
+[main d1bab90] made changes on services.html
+ 1 file changed, 2 insertions(+)
+
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 346 bytes | 346.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
+   fd0dd35..d1bab90  main -> main
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout ft/service-redesign 
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git diff main
+diff --git a/services.html b/services.html
+index cbf2c93..2520312 100644
+--- a/services.html
++++ b/services.html
+@@ -11,8 +11,8 @@
+         <li>Business consultancy</li>
+         <li>Web development</li>
+         <li>Graphic design</li>
+-        <li>Cybersecurity</li>
+-        <li>Data analytics</li>
++        <li>Digital marketing</li>
++        <li>Photography</li>
+     </ol>
+ </body>
+ </html>
+\ No newline at end of file
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git add services.html 
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git commit -m "merged branch 'main' into 'ft/service-
+redesign'"
+[ft/service-redesign 33e25ed] merged branch 'main' into 'ft/service-redesign'
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 380 bytes | 380.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
+   b02b751..33e25ed  ft/service-redesign -> ft/service-redesign
+
+```
+
 # Bundle3
 ## Exercise1
 
