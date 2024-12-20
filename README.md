@@ -705,3 +705,98 @@ To https://github.com/Mugara250/gym-git-exercises.git
  * [new branch]      main -> main
 
 ```
+
+# Bundle4
+## Exercise2
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git add faq.html 
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git commit -m "added more content to faq.html"
+[ft/footer 49b88b7] added more content to faq.html
+ 1 file changed, 1 insertion(+)
+
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git add contact.html 
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git commit -m "added more content to contact.html"
+[ft/footer 1008be9] added more content to contact.html
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git push --set-upstream origin ft/footer
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 703 bytes | 703.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/Mugara250/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote: 
+To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git merge --squash ft/footer
+Updating 284a83b..1008be9
+Fast-forward
+Squash commit -- not updating HEAD
+ contact.html | 3 ++-
+ faq.html     | 1 +
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git commit -m "footer changes squashing"
+[ft/squashing 6b6f84a] footer changes squashing
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git push --set-upstream origin ft/squashing
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 468 bytes | 468.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/Mugara250/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote: 
+To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+```
