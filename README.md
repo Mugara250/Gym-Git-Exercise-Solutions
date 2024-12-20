@@ -642,3 +642,66 @@ To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 ```
+
+# Bundle4
+## Exercise1
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git checkout main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git remote add git-copy https://github.com/Mugara250/
+gym-git-exercises.git
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git remote
+git-copy
+origin
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git add home.html 
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git commit -m "added more content to home.html"
+[main 8b440d9] added more content to home.html
+ 1 file changed, 15 insertions(+), 9 deletions(-)
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 511 bytes | 511.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
+   ec61b03..8b440d9  main -> main
+
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git push origin
+Everything up-to-date
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Gym_Git_Exercises$ git push git-copy 
+Enumerating objects: 91, done.
+Counting objects: 100% (91/91), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (85/85), done.
+Writing objects: 100% (91/91), 17.09 KiB | 1.00 MiB/s, done.
+Total 91 (delta 39), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (39/39), done.
+To https://github.com/Mugara250/gym-git-exercises.git
+ * [new branch]      main -> main
+
+```
