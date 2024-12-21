@@ -800,3 +800,47 @@ To https://github.com/Mugara250/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/squashing -> ft/squashing
 branch 'ft/squashing' set up to track 'origin/ft/squashing'.
 ```
+
+# Bundle5
+## Exercise1
+
+Link to the Github pages of the repo: https://mugara250.github.io/Gym-Git-Exercise-Solutions/
+
+# Bundle5
+## Exercise2
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Desktop/THE_GYM$ git clone https://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@github.com/Mugara250/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 92 (from 1)
+Receiving objects: 100% (107/107), 1.95 MiB | 410.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Desktop/THE_GYM/git-cafe-exercise$ git add index.html
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Desktop/THE_GYM/git-cafe-exercise$ git commit -m "changed the h2 title inside index.html"
+[main 0b71bf9] changed the h2 title inside index.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+```
+
+```bash
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Desktop/THE_GYM/git-cafe-exercise$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Mugara250/git-cafe-exercise.git
+   d1d3f9c..0b71bf9  main -> main
+
+```
