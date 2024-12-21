@@ -810,7 +810,7 @@ Link to the Github pages of the repo: https://mugara250.github.io/Gym-Git-Exerci
 ## Exercise2
 
 ```bash
-mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Desktop/THE_GYM$ git clone https://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@github.com/Mugara250/git-cafe-exercise.git
+mugara@mugara-Lenovo-Yoga-C940-14IIL:~/Desktop/THE_GYM$ git clone https://github.com/Mugara250/git-cafe-exercise.git
 Cloning into 'git-cafe-exercise'...
 remote: Enumerating objects: 107, done.
 remote: Counting objects: 100% (15/15), done.
